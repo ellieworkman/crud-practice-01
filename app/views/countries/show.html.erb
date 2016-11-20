@@ -1,0 +1,10 @@
+Here is the country you just created: 
+
+<%= @country.name %>
+<%= @country.continent %>
+<%= @country.colors %>
+<%= @country.description %>
+
+
+<%= link_to "Edit", "/countries/#{@country.id}", method: :patch %>
+<%= link_to "Delete", "/countries/#{@country.id}", method: :delete %>

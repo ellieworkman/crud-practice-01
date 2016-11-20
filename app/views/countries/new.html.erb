@@ -1,0 +1,30 @@
+Welcome to the Country Generator! 
+
+Please fill out the information: 
+
+<%= form_tag "/countries", method: :post do %>
+  <div>
+    <%= label_tag :name %>
+    <%= text_field_tag :name %>
+  </div>
+
+   <div>
+    <%= label_tag :continent %>
+    <%= text_field_tag :continent %>
+  </div>
+
+   <div>
+    <%= label_tag :colors %>
+    <%= text_field_tag :colors %>
+  </div>
+
+   <div>
+    <%= label_tag :description %>
+    <%= text_field_tag :description %>
+  </div>
+
+  <div>
+  <%= submit_tag "Submit" %>
+  </div>
+
+<% end %>
